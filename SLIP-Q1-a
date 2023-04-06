@@ -1,0 +1,40 @@
+// a php script to create a simple calculator that can accept two number and perform operation like add,sub,mul(use the concept class)
+<?php
+abstract class slip1{
+    abstract protected function add($a,$b);
+    abstract protected function substract($a,$b);
+    abstract protected function multi($a,$b);
+    abstract protected function division($a,$b);
+
+}
+
+class solution extends slip1{
+    public function add($c,$d){
+        $p=$c+$d;
+        echo "the addition is:".$p;
+    }
+    public function substract($c,$d){
+        $p=$c-$d;
+        echo " <br> the substraction is is:".$p;
+    }
+    public function multi($c,$d){
+        $p=$c*$d;
+        echo "<br>the multiplication is:".$p;
+    }
+    public function division($c,$d){
+        $p=$c/$d;
+        echo "<br> the division is:".$p;
+    }
+
+
+}
+$slipobj=new solution();
+
+$slipobj->add(3,6);
+$slipobj->substract(5,6);
+$slipobj->multi(3,7);
+$slipobj->division(8,6);
+
+
+
+?>
